@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import UseStateUse from "./UseStateUse";
 import Devide from "./Devide";
-
 const Hero = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-600 relative">
@@ -18,5 +17,4 @@ const Hero = () => {
     </div>
   );
 };
-
 export default Hero;

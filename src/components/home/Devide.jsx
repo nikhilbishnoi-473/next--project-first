@@ -1,9 +1,7 @@
 "use client";
 import React, { useState } from "react";
-
 const Devide = () => {
   const [count, setCount] = useState(0);
-
   return (
     <div className="flex justify-center">
       <div className="flex flex-col items-center">
@@ -38,5 +36,4 @@ const Devide = () => {
     </div>
   );
 };
-
 export default Devide;

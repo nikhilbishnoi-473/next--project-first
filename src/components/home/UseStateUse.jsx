@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-
 const UseStateUse = () => {
   const [count, setCount] = useState(0);
   const [toggle, setToggle] = useState(true);
@@ -43,5 +42,4 @@ const UseStateUse = () => {
     </div>
   );
 };
-
 export default UseStateUse;
