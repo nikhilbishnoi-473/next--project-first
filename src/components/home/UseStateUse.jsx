@@ -1,4 +1,4 @@
-"use client"; // This line marks the component as a Client Component
+"use client";
 import React, { useState } from "react";
 
 const UseStateUse = () => {

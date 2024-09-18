@@ -1,5 +1,4 @@
-"use client"; // This line marks the component as a Client Component
-
+"use client";
 import React, { useState } from "react";
 
 const Devide = () => {
@@ -14,7 +13,7 @@ const Devide = () => {
             className="py-2 px-3 border bg-slate-600 text-white"
             onClick={() => setCount(count + 1)}
           >
-            Value add
+            add Value
           </button>
           <button
             className="py-2 px-3 border bg-slate-600 text-white"
