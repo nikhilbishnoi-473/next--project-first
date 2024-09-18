@@ -28,7 +28,7 @@ const UseStateUse = () => {
               toggle ? "text-red-600" : "text-red-400"
             } `}
           >
-            {toggle ? "nikhil" : "bhadu"}
+            {toggle ? "bishnoi" : "bhadu"}
           </h3>
           <button
             onClick={() => setToggle(!toggle)}
