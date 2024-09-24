@@ -1,3 +1,4 @@
+import BottomToTop from "@/components/common/BottomToTop";
 import Email_js from "@/components/home/Email_Js";
 import Hero from "@/components/home/Hero";
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
       <Hero />
       <Email_js />
+      {/* <BottomToTop /> */}
     </>
   );
 }
