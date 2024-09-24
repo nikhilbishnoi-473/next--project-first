@@ -18,7 +18,7 @@ export const Email_js = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          setSend(true);
+          setSend(true); // Reset send state to true after successful send
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -27,16 +27,22 @@ export const Email_js = () => {
   };
 
   useEffect(() => {
-    VanillaTilt.init(tiltRef.current, {
-      max: 25,
-      speed: 400,
-      scale: 1.1,
-      glare: true,
-      "max-glare": 0.5,
-    });
+    // Initialize VanillaTilt
+    if (tiltRef.current) {
+      VanillaTilt.init(tiltRef.current, {
+        max: 25,
+        speed: 400,
+        scale: 1.1,
+        glare: true,
+        "max-glare": 0.5,
+      });
+    }
 
+    // Cleanup function to destroy VanillaTilt instance
     return () => {
-      tiltRef.current.vanillaTilt.destroy();
+      if (tiltRef.current) {
+        tiltRef.current.vanillaTilt.destroy();
+      }
     };
   }, []);
 

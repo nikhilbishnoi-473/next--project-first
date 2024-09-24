@@ -5,13 +5,13 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const BottomBtn = () => {
   const [changing, setChanging] = useState(false);
-  const handleScroll = () => {
+  const topScroll = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
-  const handleclick = () => {
+  const topClick = () => {
     if (window.scrollY > 200) {
       setChanging(true);
     } else {
@@ -19,19 +19,19 @@ const BottomBtn = () => {
     }
   };
   useEffect(() => {
-    window.addEventListener("scroll", handleclick);
+    window.addEventListener("scroll", topClick);
     return () => {
-      window.removeEventListener("scroll", handleclick);
+      window.removeEventListener("scroll", topClick);
     };
   }, []);
   return (
     <div>
       {changing && (
         <button
-          onClick={handleScroll}
-          className="size-[70px] fixed bottom-4 text-white border-[3px] right-3 rounded-full"
+          onClick={topScroll}
+          className="size-[50px] fixed bottom-4 text-white border-[3px] right-3 rounded-full"
         >
-          <FontAwesomeIcon icon={faArrowUp} className="text-4xl text-white" />
+          <FontAwesomeIcon icon={faArrowUp} className="text-2xl text-white" />
         </button>
       )}
     </div>
