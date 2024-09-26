@@ -58,7 +58,7 @@ export const Email_js = () => {
           className="flex flex-col items-center"
         >
           <div className="flex gap-5 items-center mb-4">
-            <label className="border w-[100px] h-[40px] flex justify-center items-center hover:bg-red-900 text-white duration-300 border-red-400 bg-red-400">
+            <label className="border w-[100px] h-[40px] cursor-pointer9o9ev3556f7g8hp[ytr] flex justify-center items-center hover:bg-red-900 text-white duration-300 border-red-400 bg-red-400">
               Name
             </label>
             <input
@@ -69,7 +69,7 @@ export const Email_js = () => {
             />
           </div>
           <div className="flex gap-5 mb-4">
-            <label className="border w-[100px] h-[40px] flex justify-center items-center hover:bg-red-900 text-white duration-300 border-red-400 bg-red-400">
+            <label className="border w-[100px] h-[40px] cursor-pointer flex justify-center items-center hover:bg-red-900 text-white duration-300 border-red-400 bg-red-400">
               Email
             </label>
             <input
@@ -80,7 +80,7 @@ export const Email_js = () => {
             />
           </div>
           <div className="flex gap-5 mb-4">
-            <label className="border w-[100px] h-[40px] flex justify-center items-center hover:bg-red-900 text-white duration-300 border-red-400 bg-red-400">
+            <label className="border w-[100px] cursor-pointer h-[40px] flex justify-center items-center hover:bg-red-900 text-white duration-300 border-red-400 bg-red-400">
               Message
             </label>
             <textarea

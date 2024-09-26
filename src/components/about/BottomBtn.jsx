@@ -25,7 +25,7 @@ const BottomBtn = () => {
     };
   }, []);
   return (
-    <div>
+    <div className=" max-w-[1920px]">
       {changing && (
         <button
           onClick={topScroll}
